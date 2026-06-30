@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "PowerShell(gh *)",
+      "Bash(curl *)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"https://github.com/abrahamcaguiat65412/Caguiat_Automation\" -UseBasicParsing -ErrorAction Stop; Write-Output $r.StatusCode } catch { Write-Output $_.Exception.Response.StatusCode.value__ })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"https://github.com/abrahamcaguiat65412/Caguiat_Automation\" -UseBasicParsing -ErrorAction Stop; \"STATUS:$\\($r.StatusCode\\)\" } catch { \"ERROR:$\\($_.Exception.Message\\)\" })",
+      "Bash(timeout 15 git ls-remote https://github.com/abrahamcaguiat65412/Caguiat_Automation.git)",
+      "Bash(echo \"EXIT:$?\")",
+      "PowerShell(git ls-remote *)",
+      "PowerShell(git *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)"
+    ]
+  }
+}
